@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./js/index.js">
+</head>
+<script>
+    let a = 20;
+//  a= prompt("nhap vao so a", "0");
+//  a = parseInt(a);
+document.write("<hr> <h2>bai1</h2> ");
+for( i=0; i<=a; i++ ){
+    document.write("<br>cac so nho hon a la: ", i);
+}
+  document.write("<hr> <h2>bai2 & 3</h2> ");
+for(i=0; i<=a; i++){
+    if(i%2===0){
+        document.write("<br>cac so chan la:", i);
+    }
+    
+}
+
+for(i=0; i<=a; i++){
+    if(i%2!=0){
+        document.write("<br>cac so le la:", i);
+    }
+    
+}
+
+document.write("<hr> <h2>bai4</h2> ");
+
+
+
+
+document.write("<hr> <h2>bai5</h2> ");
+
+    var tong = 0;
+    var index = 0;
+ 
+    while (index <= a)
+    {
+        // Nếu số chẵn thì cộng vào
+       
+            tong += index;
+        
+ 
+        // tăng biến đếm
+        index++;
+    }
+ 
+    document.write("Tổng số chẵn từ 1 tới " + a + " là: " + tong + "<br/>");
+document.write("<hr> <h2>bai6</h2> ");
+var e =3
+var tong = 0;
+    var index = 0;
+ 
+    while (index <= e)
+    {
+        // Nếu số chẵn thì cộng vào
+       
+            tong += index*index;
+        
+ 
+        // tăng biến đếm
+        index++;
+    }
+    document.write("Tổng số chẵn từ 1 tới " + e + " là: " + tong + "<br/>");
+    document.write("<hr> <h2>bai7</h2> ");
+
+    var n =5;
+    var tong = 0;
+    var index = 0;
+ 
+    while (index <= n)
+    {
+        // Nếu số chẵn thì cộng vào
+       
+        if (index % 2 != 0){
+            tong += index;
+        }
+        
+ 
+        // tăng biến đếm
+        index++;
+    }
+ 
+    document.write("tong sp le tu 1 tới " + n+ " là: " + tong + "<br/>");
+
+    document.write("<hr> <h2>bai10</h2> ");
+
+    for(let i = 2; i <= 2; i ++) {
+  
+    for(let j = 1; j <=10; j ++) {
+        document.write("<br>", i + "*" + j + "="+ i*j);
+       
+    }
+}
+
+document.write("<hr> <h2>bai8</h2> ");
+
+</script>
+
+
+
+<!-- <script>
+    let a;
+ a= prompt("nhap vao so a", "0");
+ a = parseInt(a);
+for( i=0; i<=a; i++ ){
+   if(i%2=0){
+    document.write("ko");
+   }else{
+    document.write("<br>cac so nho hon a la: ", i);
+   }
+}
+</script> -->
+<body>
+
+
+
+    
+</body>
+</html>

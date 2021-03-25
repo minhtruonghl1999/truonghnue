@@ -1,0 +1,73 @@
+
+
+@media only all and (min-width: 320px)  and (max-width: 374px){
+   div{
+    background-color: green;
+   }
+}
+
+.grand{
+    position: relative;
+    /* ---> dùng đc top left  */  left: 30px;top: 30px;
+}
+.container{
+    width: 400px;
+height: 400px;
+background-color: grey;
+}
+.absolute{
+    background-color: red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 100px;
+
+}
+.calling{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid black ;
+}
+.translate{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    
+    background-color: red;
+    transform: rotate(45deg);
+}
+.translate:hover{
+    transition: transform 2s;
+    transform: translate(50px, 50px)
+}
+.search{
+    width: 30px;
+    transition: width 1s;
+}
+.search:focus{
+    transition: width 1s;
+    width: 300px;
+    background-color: yellow;
+}
+
+@keyframes dance{
+    from{
+        top: 0px;
+        left: 0px;
+
+    }
+    to{
+        top: 0px;
+        left: 100px;
+    }
+}
+.animation{
+    position: relative;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: dance 1s ease-in-out 3s 2 normal forwards ;
+}
